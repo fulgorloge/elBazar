@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Cuenta - Tu Tienda Online</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-top-bar">
+            <span>¡Envío GRATIS en compras superiores a $150.000 COP!</span>
+        </div>
+        <div class="header-main">
+            <div class="logo">
+                <a href="index.html">Tu Tienda Online</a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar productos...">
+                <button><span class="material-icons">search</span></button>
+            </div>
+            <div class="user-actions">
+                <a href="login.html" class="nav-link">
+                    <span class="material-icons">person</span>
+                    <span>Iniciar Sesión</span>
+                </a>
+                <div class="nav-link" id="account-link">
+                    <span class="material-icons">account_circle</span>
+                    <span>Mi Cuenta</span>
+                    <div class="dropdown-menu">
+                        <a href="my-account.html">Mi Perfil</a>
+                        <a href="my-account.html#my-orders">Mis Pedidos</a>
+                        <a href="my-account.html#my-addresses">Mis Direcciones</a>
+                        <a href="my-account.html#payment-methods">Métodos de Pago</a>
+                        <a href="#">Cerrar Sesión</a>
+                    </div>
+                </div>
+                <a href="cart.html" class="nav-link">
+                    <span class="material-icons">shopping_cart</span>
+                    <span>Carrito</span>
+                </a>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="category-listing.html">Electrónica <span class="material-icons arrow-down">arrow_drop_down</span></a>
+                    <ul class="submenu">
+                        <li><a href="category-listing.html">Smartphones</a></li>
+                        <li><a href="category-listing.html">Portátiles</a></li>
+                        <li><a href="category-listing.html">Audífonos</a></li>
+                        <li><a href="category-listing.html">Televisores</a></li>
+                    </ul>
+                </li>
+                <li><a href="category-listing.html">Ropa</a></li>
+                <li><a href="category-listing.html">Hogar</a></li>
+                <li><a href="category-listing.html">Deportes</a></li>
+                <li><a href="category-listing.html">Ofertas</a></li>
+                <li><a href="sell.html">Vende con nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content my-account-content">
+        <h1>Mi Cuenta</h1>
+        <div class="account-dashboard">
+            <aside class="account-sidebar">
+                <ul>
+                    <li><a href="#my-profile" class="active">Mi Perfil</a></li>
+                    <li><a href="#my-orders">Mis Pedidos</a></li>
+                    <li><a href="#my-addresses">Mis Direcciones</a></li>
+                    <li><a href="#payment-methods">Métodos de Pago</a></li>
+                    <li><a href="#my-credit">Mi Crédito</a></li>
+                    <li><a href="#my-scores">Mis Puntuaciones</a></li>
+                    <li><a href="#">Cerrar Sesión</a></li>
+                </ul>
+            </aside>
+            <div class="account-details">
+                <section id="my-profile" class="account-section active">
+                    <h2>Mi Perfil</h2>
+                    <div class="profile-info">
+                        <p><strong>Nombre:</strong> Juan Pérez</p>
+                        <p><strong>Email:</strong> juan.perez@example.com</p>
+                        <p><strong>Teléfono:</strong> +57 300 123 4567</p>
+                        <p><strong>Fecha de Registro:</strong> 15 de Enero, 2023</p>
+                        <button class="btn-primary">Editar Perfil</button>
+                    </div>
+                </section>
+
+                <section id="my-orders" class="account-section">
+                    <h2>Mis Pedidos</h2>
+                    <div class="orders-list">
+                        <div class="order-item">
+                            <div class="order-header">
+                                <span><strong>Pedido #12345</strong></span>
+                                <span>Fecha: 2024-07-20</span>
+                                <span>Total: $3.200.000 COP</span>
+                                <span>Estado: <span class="status-delivered">Entregado</span></span>
+                            </div>
+                            <div class="order-details-summary">
+                                <p>Producto: Smartphone X, Auriculares Z</p>
+                                <a href="#">Ver Detalles</a>
+                            </div>
+                        </div>
+                        <div class="order-item">
+                            <div class="order-header">
+                                <span><strong>Pedido #12346</strong></span>
+                                <span>Fecha: 2024-07-22</span>
+                                <span>Total: $150.000 COP</span>
+                                <span>Estado: <span class="status-processing">En Proceso</span></span>
+                            </div>
+                            <div class="order-details-summary">
+                                <p>Producto: Cargador Universal</p>
+                                <a href="#">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-secondary">Ver Todos los Pedidos</button>
+                </section>
+
+                <section id="my-addresses" class="account-section">
+                    <h2>Mis Direcciones</h2>
+                    <div class="address-list">
+                        <div class="address-item">
+                            <h3>Dirección Principal</h3>
+                            <p>Calle Ficticia #123 - 45, Apartamento 501</p>
+                            <p>Medellín, Antioquia, 050001</p>
+                            <p>Teléfono: 300 123 4567</p>
+                            <button class="btn-secondary">Editar</button>
+                            <button class="btn-secondary">Eliminar</button>
+                        </div>
+                        <div class="address-item">
+                            <h3>Dirección de Trabajo</h3>
+                            <p>Carrera 45 #67 - 89, Oficina 1002</p>
+                            <p>Bogotá, Cundinamarca, 110111</p>
+                            <p>Teléfono: 301 987 6543</p>
+                            <button class="btn-secondary">Editar</button>
+                            <button class="btn-secondary">Eliminar</button>
+                        </div>
+                    </div>
+                    <button class="btn-primary">Añadir Nueva Dirección</button>
+                </section>
+
+                <section id="payment-methods" class="account-section">
+                    <h2>Métodos de Pago</h2>
+                    <div class="payment-methods-list">
+                        <div class="payment-method-item">
+                            <h3>Tarjeta de Crédito - **** 1234</h3>
+                            <p>Expiración: 12/26</p>
+                            <p>Titular: Juan Pérez</p>
+                            <button class="btn-secondary">Editar</button>
+                            <button class="btn-secondary">Eliminar</button>
+                        </div>
+                        <div class="payment-method-item">
+                            <h3>Nequi - 300 123 4567</h3>
+                            <p>Asociado a: Juan Pérez</p>
+                            <button class="btn-secondary">Editar</button>
+                            <button class="btn-secondary">Eliminar</button>
+                        </div>
+                    </div>
+                    <button class="btn-primary">Añadir Método de Pago</button>
+                </section>
+
+                <section id="my-credit" class="account-section">
+                    <h2>Mi Crédito Disponible</h2>
+                    <div class="credit-info-card">
+                        <span class="material-icons credit-icon">account_balance_wallet</span>
+                        <p class="credit-amount">Crédito Actual: <strong>$10.000 COP</strong></p>
+                        <p class="credit-note">¡Felicidades! Has ganado este crédito en compras anteriores. Puedes utilizarlo para cubrir hasta el 80% del valor de tus próximos productos (después de pagar un 20% de comisión inicial).</p>
+                        <button class="btn-secondary">Ver Historial de Crédito</button>
+                    </div>
+                </section>
+
+                <section id="my-scores" class="account-section">
+                    <h2>Mis Puntuaciones</h2>
+                    <div class="scores-grid">
+                        <div class="score-card">
+                            <span class="material-icons score-icon">shopping_bag</span>
+                            <h3>Puntuación de Compra</h3>
+                            <p class="score-value">850 Puntos</p>
+                            <p class="score-description">Basada en tu actividad de compra y lealtad.</p>
+                        </div>
+                        <div class="score-card">
+                            <span class="material-icons score-icon">store</span>
+                            <h3>Puntuación de Venta</h3>
+                            <p class="score-value">4.8 <span class="material-icons star-icon">star</span></p>
+                            <p class="score-description">Tu reputación como vendedor en la plataforma.</p>
+                        </div>
+                        <div class="score-card">
+                            <span class="material-icons score-icon">credit_score</span>
+                            <h3>Puntuación de Crédito</h3>
+                            <p class="score-value">Excelente</p>
+                            <p class="score-description">Tu historial de manejo de crédito en la plataforma.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-columns">
+            <div class="footer-col">
+                <h3>Sobre Nosotros</h3>
+                <ul>
+                    <li><a href="#">Nuestra Historia</a></li>
+                    <li><a href="#">Trabaja con Nosotros</a></li>
+                    <li><a href="privacy-policy.html">Política de Privacidad</a></li>
+                    <li><a href="terms-conditions.html">Términos y Condiciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Atención al Cliente</h3>
+                <ul>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                    <li><a href="#">Envíos y Entregas</a></li>
+                    <li><a href="#">Devoluciones y Reembolsos</a></li>
+                    <li><a href="contact.html">Contáctanos</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Mi Cuenta</h3>
+                <ul>
+                    <li><a href="my-account.html">Mi Perfil</a></li>
+                    <li><a href="my-account.html#my-orders">Mis Pedidos</a></li>
+                    <li><a href="cart.html">Mi Carrito</a></li>
+                    <li><a href="login.html">Iniciar Sesión</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Síguenos</h3>
+                <div class="social-media">
+                    <a href="#"><img src="https://via.placeholder.com/30x30/3b5998/ffffff?text=F" alt="Facebook"></a>
+                    <a href="#"><img src="https://via.placeholder.com/30x30/E1306C/ffffff?text=I" alt="Instagram"></a>
+                    <a href="#"><img src="https://via.placeholder.com/30x30/1DA1F2/ffffff?text=T" alt="Twitter"></a>
+                    <a href="#"><img src="https://via.placeholder.com/30x30/FF0000/ffffff?text=Y" alt="YouTube"></a>
+                </div>
+                <h3>Métodos de Pago</h3>
+                <div class="payment-methods">
+                    <img src="https://via.placeholder.com/60x30?text=Visa" alt="Visa">
+                    <img src="https://via.placeholder.com/60x30?text=Mastercard" alt="Mastercard">
+                    <img src="https://via.placeholder.com/60x30?text=PSE" alt="PSE">
+                    <img src="https://via.placeholder.com/60x30?text=Nequi" alt="Nequi">
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Tu Tienda Online. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <div class="chatbot-container" id="chatbot-container">
+        <div class="chatbot-header" id="chatbot-header">
+            <h3>Asistente Virtual</h3>
+            <button class="close-chatbot" id="close-chatbot"><span class="material-icons">close</span></button>
+        </div>
+        <div class="chatbot-body" id="chatbot-body">
+            <div class="message bot-message">Hola, soy tu asistente virtual. ¿En qué puedo ayudarte hoy?</div>
+        </div>
+        <div class="chatbot-footer">
+            <input type="text" id="chatbot-input" placeholder="Escribe tu mensaje...">
+            <button id="chatbot-send-btn"><span class="material-icons">send</span></button>
+        </div>
+    </div>
+
+    <button class="open-chatbot-btn" id="open-chatbot-btn">
+        <span class="material-icons">chat</span>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

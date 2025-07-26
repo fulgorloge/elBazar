@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Vendedor - Mi Tienda Online</title>
+    <meta name="description" content="Gestiona tus productos, pedidos y ventas desde el panel de vendedor de Mi Tienda Online.">
+    <meta name="keywords" content="panel de vendedor, dashboard, ventas, productos, pedidos, ingresos, ecommerce">
+    <link rel="canonical" href="https://tutienda.com/seller-dashboard.html">
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-top-bar">
+            <span>¡Envío gratis en compras superiores a $100.000!</span>
+        </div>
+        <div class="header-main">
+            <div class="logo">
+                <a href="index.html">Mi Tienda</a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar productos...">
+                <button type="submit"><i class="material-icons">search</i></button>
+            </div>
+            <nav class="user-actions">
+                <a href="#" class="nav-link" id="account-link">
+                    <i class="material-icons">account_circle</i>
+                    <span>Mi Cuenta</span>
+                    <div class="dropdown-menu" id="account-dropdown">
+                        <a href="login.html">Iniciar Sesión / Registrarse</a>
+                        <a href="my-account.html">Mi Perfil</a>
+                        <a href="my-account.html#my-orders">Mis Pedidos</a>
+                        <a href="my-account.html#payment-methods">Mis Métodos de Pago</a>
+                        <a href="seller-dashboard.html">Panel de Vendedor</a>
+                        <a href="#">Cerrar Sesión</a>
+                    </div>
+                </a>
+                <a href="#" class="nav-link"><i class="material-icons">favorite_border</i><span>Lista de Deseos</span></a>
+                <a href="cart.html" class="nav-link cart-icon"><i class="material-icons">shopping_cart</i><span>Carrito (<span id="cart-count">0</span>)</span></a>
+            </nav>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">Categorías <i class="material-icons arrow-down">arrow_drop_down</i></a>
+                    <ul class="submenu">
+                        <li><a href="#">Ropa Mujer</a></li>
+                        <li><a href="#">Ropa Hombre</a></li>
+                        <li><a href="#">Accesorios</a></li>
+                        <li><a href="#">Electrónica</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Novedades</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="sell.html">¡Vende con Nosotros!</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content seller-dashboard-page">
+        <h1>Panel de Vendedor</h1>
+        <div class="dashboard-overview">
+            <div class="overview-card">
+                <h3>Ventas Totales</h3>
+                <p>$1.250.000 COP</p>
+            </div>
+            <div class="overview-card">
+                <h3>Pedidos Pendientes</h3>
+                <p>5</p>
+            </div>
+            <div class="overview-card">
+                <h3>Productos Activos</h3>
+                <p>25</p>
+            </div>
+            <div class="overview-card">
+                <h3>Ganancias Netas</h3>
+                <p>$1.187.500 COP</p> 
+                </div>
+        </div>
+
+        <div class="dashboard-sections">
+            <aside class="dashboard-sidebar">
+                <ul>
+                    <li><a href="#overview" class="active">Resumen</a></li>
+                    <li><a href="#my-products">Mis Productos</a></li>
+                    <li><a href="#orders">Pedidos</a></li>
+                    <li><a href="#analytics">Estadísticas</a></li>
+                    <li><a href="#settings">Configuración</a></li>
+                </ul>
+            </aside>
+            <section class="dashboard-content">
+                <div id="overview" class="dashboard-section active">
+                    <h2>Resumen del Vendedor</h2>
+                    <p>Bienvenido de nuevo, [Nombre del Vendedor]!</p>
+                    <div class="summary-cards">
+                        <div class="summary-card">
+                            <h4>Últimas Ventas</h4>
+                            <ul>
+                                <li>#ORD1001 - $80.000 (Pendiente)</li>
+                                <li>#ORD1000 - $120.000 (Completado)</li>
+                            </ul>
+                            <a href="#orders">Ver todos los pedidos</a>
+                        </div>
+                        <div class="summary-card">
+                            <h4>Notificaciones</h4>
+                            <ul>
+                                <li>Nuevo pedido #ORD1001 recibido.</li>
+                                <li>Tu producto "Zapatillas Urbanas" tiene 10 nuevas visitas.</li>
+                            </ul>
+                            <a href="#">Ver todas las notificaciones</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="my-products" class="dashboard-section">
+                    <h2>Mis Productos</h2>
+                    <div class="actions-bar">
+                        <input type="text" placeholder="Buscar producto...">
+                        <button class="btn-primary">Añadir Nuevo Producto</button>
+                    </div>
+                    <div class="product-table-responsive">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre del Producto</th>
+                                    <th>Precio</th>
+                                    <th>Stock</th>
+                                    <th>Estado</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><img src="https://via.placeholder.com/50x50?text=Prod1" alt="Producto 1"></td>
+                                    <td>Camiseta Deportiva Transpirable</td>
+                                    <td>$55.000</td>
+                                    <td>50</td>
+                                    <td class="status-active">Activo</td>
+                                    <td>
+                                        <button class="btn-icon"><i class="material-icons">edit</i></button>
+                                        <button class="btn-icon"><i class="material-icons">delete</i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="https://via.placeholder.com/50x50?text=Prod2" alt="Producto 2"></td>
+                                    <td>Jeans Clásicos Hombre</td>
+                                    <td>$120.000</td>
+                                    <td>20</td>
+                                    <td class="status-active">Activo</td>
+                                    <td>
+                                        <button class="btn-icon"><i class="material-icons">edit</i></button>
+                                        <button class="btn-icon"><i class="material-icons">delete</i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="https://via.placeholder.com/50x50?text=Prod3" alt="Producto 3"></td>
+                                    <td>Bolso de Cuero Elegante</td>
+                                    <td>$250.000</td>
+                                    <td>10</td>
+                                    <td class="status-inactive">Inactivo</td>
+                                    <td>
+                                        <button class="btn-icon"><i class="material-icons">edit</i></button>
+                                        <button class="btn-icon"><i class="material-icons">delete</i></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div id="orders" class="dashboard-section">
+                    <h2>Pedidos Recibidos</h2>
+                    <div class="actions-bar">
+                        <select>
+                            <option>Todos los estados</option>
+                            <option>Pendiente</option>
+                            <option>Enviado</option>
+                            <option>Completado</option>
+                            <option>Cancelado</option>
+                        </select>
+                        <input type="date">
+                        <button class="btn-secondary">Filtrar</button>
+                    </div>
+                    <div class="order-table-responsive">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>ID Pedido</th>
+                                    <th>Fecha</th>
+                                    <th>Cliente</th>
+                                    <th>Productos</th>
+                                    <th>Total Venta</th>
+                                    <th>Comisión (5%)</th>
+                                    <th>Tu Ganancia</th>
+                                    <th>Estado</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>#ORD1001</td>
+                                    <td>2025-07-25</td>
+                                    <td>Laura S.</td>
+                                    <td>1x Camiseta Deportiva</td>
+                                    <td>$55.000</td>
+                                    <td>$2.750</td>
+                                    <td>$52.250</td>
+                                    <td class="status-pending">Pendiente</td>
+                                    <td>
+                                        <button class="btn-icon"><i class="material-icons">visibility</i></button>
+                                        <button class="btn-icon"><i class="material-icons">local_shipping</i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#ORD1000</td>
+                                    <td>2025-07-20</td>
+                                    <td>Pedro R.</td>
+                                    <td>1x Jeans Clásicos</td>
+                                    <td>$120.000</td>
+                                    <td>$6.000</td>
+                                    <td>$114.000</td>
+                                    <td class="status-shipped">Enviado</td>
+                                    <td>
+                                        <button class="btn-icon"><i class="material-icons">visibility</i></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div id="analytics" class="dashboard-section">
+                    <h2>Estadísticas de Ventas</h2>
+                    <p>Aquí se mostrarían gráficos y métricas de tus ventas y rendimiento.</p>
+                    <div class="chart-placeholder">
+                        <p>[Gráfico de Ventas Mensuales]</p>
+                    </div>
+                    <div class="chart-placeholder">
+                        <p>[Gráfico de Productos Más Vendidos]</p>
+                    </div>
+                </div>
+
+                <div id="settings" class="dashboard-section">
+                    <h2>Configuración de Vendedor</h2>
+                    <form class="account-form">
+                        <div class="form-group">
+                            <label for="seller-name">Nombre de Tienda:</label>
+                            <input type="text" id="seller-name" value="Mi Tienda de Ropa">
+                        </div>
+                        <div class="form-group">
+                            <label for="seller-description">Descripción:</label>
+                            <textarea id="seller-description">Vendemos ropa deportiva y casual de alta calidad.</textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="bank-account">Cuenta Bancaria para Pagos:</label>
+                            <input type="text" id="bank-account" placeholder="Número de cuenta">
+                        </div>
+                        <button type="submit" class="btn-primary">Guardar Configuración</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-columns">
+            <div class="footer-col">
+                <h3>Sobre Nosotros</h3>
+                <ul>
+                    <li><a href="#">Nuestra Historia</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Trabaja con Nosotros</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Ayuda</h3>
+                <ul>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Devoluciones</a></li>
+                    <li><a href="#">Guía de Tallas</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Política de Cookies</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Vendedores</h3>
+                <ul>
+                    <li><a href="sell.html">Vende con Nosotros</a></li>
+                    <li><a href="seller-dashboard.html">Panel de Vendedor</a></li>
+                    <li><a href="#">Preguntas Frecuentes Vendedores</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="social-media">
+                <a href="#"><img src="https://via.placeholder.com/30x30?text=FB" alt="Facebook"></a>
+                <a href="#"><img src="https://via.placeholder.com/30x30?text=IG" alt="Instagram"></a>
+                <a href="#"><img src="https://via.placeholder.com/30x30?text=TW" alt="Twitter"></a>
+            </div>
+            <div class="payment-methods">
+                <img src="https://via.placeholder.com/60x30?text=Visa" alt="Visa">
+                <img src="https://via.placeholder.com/60x30?text=MC" alt="Mastercard">
+                <img src="https://via.placeholder.com/60x30?text=PSE" alt="PSE">
+                <img src="https://via.placeholder.com/60x30?text=Bancolombia" alt="Bancolombia">
+                <img src="https://via.placeholder.com/60x30?text=Addi" alt="Addi">
+            </div>
+            <p>&copy; 2025 Mi Tienda Online. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

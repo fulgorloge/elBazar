@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse - Mi Tienda Online</title>
+    <meta name="description" content="Crea una cuenta nueva en Mi Tienda Online para disfrutar de todos nuestros servicios y realizar compras.">
+    <meta name="keywords" content="registrarse, crear cuenta, registro, nuevo usuario, ecommerce">
+    <link rel="canonical" href="https://tutienda.com/register.html">
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-top-bar">
+            <span>¡Envío gratis en compras superiores a $100.000!</span>
+        </div>
+        <div class="header-main">
+            <div class="logo">
+                <a href="index.html">Mi Tienda</a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar productos...">
+                <button type="submit"><i class="material-icons">search</i></button>
+            </div>
+            <nav class="user-actions">
+                <a href="#" class="nav-link" id="account-link">
+                    <i class="material-icons">account_circle</i>
+                    <span>Mi Cuenta</span>
+                    <div class="dropdown-menu" id="account-dropdown">
+                        <a href="login.html">Iniciar Sesión / Registrarse</a>
+                        <a href="my-account.html">Mi Perfil</a>
+                        <a href="my-account.html#my-orders">Mis Pedidos</a>
+                        <a href="my-account.html#payment-methods">Mis Métodos de Pago</a>
+                        <a href="seller-dashboard.html">Panel de Vendedor</a>
+                        <a href="#">Cerrar Sesión</a>
+                    </div>
+                </a>
+                <a href="#" class="nav-link"><i class="material-icons">favorite_border</i><span>Lista de Deseos</span></a>
+                <a href="cart.html" class="nav-link cart-icon"><i class="material-icons">shopping_cart</i><span>Carrito (<span id="cart-count">0</span>)</span></a>
+            </nav>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">Categorías <i class="material-icons arrow-down">arrow_drop_down</i></a>
+                    <ul class="submenu">
+                        <li><a href="#">Ropa Mujer</a></li>
+                        <li><a href="#">Ropa Hombre</a></li>
+                        <li><a href="#">Accesorios</a></li>
+                        <li><a href="#">Electrónica</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Novedades</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="sell.html">¡Vende con Nosotros!</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content auth-page">
+        <div class="auth-container">
+            <h2>Crear Cuenta</h2>
+            <form class="auth-form">
+                <div class="form-group">
+                    <label for="register-name">Nombre Completo:</label>
+                    <input type="text" id="register-name" name="full_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-email">Correo Electrónico:</label>
+                    <input type="email" id="register-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-password">Contraseña:</label>
+                    <input type="password" id="register-password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirmar Contraseña:</label>
+                    <input type="password" id="confirm-password" name="confirm_password" required>
+                </div>
+                <button type="submit" class="btn-primary">Registrarse</button>
+            </form>
+            <p class="auth-footer">¿Ya tienes cuenta? <a href="login.html">Inicia Sesión</a></p>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-columns">
+            <div class="footer-col">
+                <h3>Sobre Nosotros</h3>
+                <ul>
+                    <li><a href="#">Nuestra Historia</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Trabaja con Nosotros</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Ayuda</h3>
+                <ul>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Devoluciones</a></li>
+                    <li><a href="#">Guía de Tallas</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Política de Cookies</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Vendedores</h3>
+                <ul>
+                    <li><a href="sell.html">Vende con Nosotros</a></li>
+                    <li><a href="seller-dashboard.html">Panel de Vendedor</a></li>
+                    <li><a href="#">Preguntas Frecuentes Vendedores</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="social-media">
+                <a href="#"><img src="https://via.placeholder.com/30x30?text=FB" alt="Facebook"></a>
+                <a href="#"><img src="https://via.placeholder.com/30x30?text=IG" alt="Instagram"></a>
+                <a href="#"><img src="https://via.placeholder.com/30x30?text=TW" alt="Twitter"></a>
+            </div>
+            <div class="payment-methods">
+                <img src="https://via.placeholder.com/60x30?text=Visa" alt="Visa">
+                <img src="https://via.placeholder.com/60x30?text=MC" alt="Mastercard">
+                <img src="https://via.placeholder.com/60x30?text=PSE" alt="PSE">
+                <img src="https://via.placeholder.com/60x30?text=Bancolombia" alt="Bancolombia">
+                <img src="https://via.placeholder.com/60x30?text=Addi" alt="Addi">
+            </div>
+            <p>&copy; 2025 Mi Tienda Online. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

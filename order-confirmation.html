@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Pedido Confirmado! - Mi Tienda Online</title>
+    <meta name="description" content="Tu pedido ha sido confirmado. Gracias por tu compra. Revisa los detalles de tu pedido.">
+    <meta name="keywords" content="pedido confirmado, compra exitosa, gracias por tu compra, seguimiento de pedido">
+    <link rel="canonical" href="https://tutienda.com/order-confirmation.html">
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class="order-confirmation-page">
+
+    <header class="main-header">
+        <div class="header-top-bar">
+            <span>¡Envío gratis en compras superiores a $100.000!</span>
+        </div>
+        <div class="header-main">
+            <div class="logo">
+                <a href="index.html">Mi Tienda</a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar productos...">
+                <button type="submit"><i class="material-icons">search</i></button>
+            </div>
+            <nav class="user-actions">
+                <a href="#" class="nav-link" id="account-link">
+                    <i class="material-icons">account_circle</i>
+                    <span>Mi Cuenta</span>
+                    <div class="dropdown-menu" id="account-dropdown">
+                        <a href="login.html">Iniciar Sesión / Registrarse</a>
+                        <a href="my-account.html">Mi Perfil</a>
+                        <a href="my-account.html#my-orders">Mis Pedidos</a>
+                        <a href="my-account.html#payment-methods">Mis Métodos de Pago</a>
+                        <a href="seller-dashboard.html">Panel de Vendedor</a>
+                        <a href="#">Cerrar Sesión</a>
+                    </div>
+                </a>
+                <a href="#" class="nav-link"><i class="material-icons">favorite_border</i><span>Lista de Deseos</span></a>
+                <a href="cart.html" class="nav-link cart-icon"><i class="material-icons">shopping_cart</i><span>Carrito (<span id="cart-count">0</span>)</span></a>
+            </nav>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">Categorías <i class="material-icons arrow-down">arrow_drop_down</i></a>
+                    <ul class="submenu">
+                        <li><a href="#">Ropa Mujer</a></li>
+                        <li><a href="#">Ropa Hombre</a></li>
+                        <li><a href="#">Accesorios</a></li>
+                        <li><a href="#">Electrónica</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Novedades</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="sell.html">¡Vende con Nosotros!</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content order-confirmation-page">
+        <div class="confirmation-container">
+            <i class="material-icons success-icon">check_circle</i>
+            <h1>¡Tu Pedido Ha Sido Confirmado!</h1>
+            <p class="order-message">Gracias por tu compra. Hemos recibido tu pedido y estamos procesándolo. Recibirás un correo electrónico con los detalles y la información de seguimiento una vez que tu pedido sea enviado.</p>
+
+            <div class="order-details-summary">
+                <h3>Detalles de tu Pedido</h3>
+                <p><strong>Número de Pedido:</strong> <span id="order-number">#XYZ123456</span></p>
+                <p><strong>Fecha del Pedido:</strong> <span id="order-date">26 de Julio, 2025</span></p>
+                <p><strong>Total Pagado:</strong> <span id="order-total">$199.900 COP</span></p>
+                <p><strong>Método de Pago:</strong> <span id="payment-method">Tarjeta de Crédito</span></p>
+            </div>
+
+            <div class="next-steps">
+                <h3>Próximos Pasos:</h3>
+                <ul>
+                    <li>Consulta el estado de tu pedido en <a href="my-account.html#my-orders">Mis Pedidos</a> en tu cuenta.</li>
+                    <li>Revisa tu correo electrónico (incluyendo la bandeja de spam) para la confirmación de tu pedido y detalles de envío.</li>
+                    <li>Para cualquier pregunta, visita nuestra página de <a href="#">Ayuda y Contacto</a>.</li>
+                </ul>
+            </div>
+
+            <div class="confirmation-actions">
+                <a href="index.html" class="btn-primary">Volver a la Tienda</a>
+                <a href="my-account.html#my-orders" class="btn-secondary">Ver Mis Pedidos</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-columns">
+            <div class="footer-col">
+                <h3>Sobre Nosotros</h3>
+                <ul>
+                    <li><a href="#">Nuestra Historia</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Trabaja con Nosotros</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Ayuda</h3>
+                <ul>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Devoluciones</a></li>
+                    <li><a href="#">Guía de Tallas</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Política de Cookies</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Vendedores</h3>
+                <ul>
+                    <li><a href="sell.html">Vende con Nosotros</a></li>
+                    <li><a href="seller-dashboard.html">Panel de Vendedor</a></li>
+                    <li><a href="#">Preguntas Frecuentes Vendedores</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="social-media">
+                <a href="#"><img src="https://via.placeholder.com/30x30?text=FB" alt="Facebook"></a>
+                <a href="#"><img src="https://via.placeholder.com/30x30?text=IG" alt="Instagram"></a>
+                <a href="#"><img src="https://via.placeholder.com/30x30?text=TW" alt="Twitter"></a>
+            </div>
+            <div class="payment-methods">
+                <img src="https://via.placeholder.com/60x30?text=Visa" alt="Visa">
+                <img src="https://via.placeholder.com/60x30?text=MC" alt="Mastercard">
+                <img src="https://via.placeholder.com/60x30?text=PSE" alt="PSE">
+                <img src="https://via.placeholder.com/60x30?text=Bancolombia" alt="Bancolombia">
+                <img src="https://via.placeholder.com/60x30?text=Addi" alt="Addi">
+            </div>
+            <p>&copy; 2025 Mi Tienda Online. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

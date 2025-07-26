@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Tienda Online - Inicio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-top-bar">
+            <span>¡Envío GRATIS en compras superiores a $150.000 COP!</span>
+        </div>
+        <div class="header-main">
+            <div class="logo">
+                <a href="index.html">Tu Tienda Online</a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar productos...">
+                <button><span class="material-icons">search</span></button>
+            </div>
+            <div class="user-actions">
+                <a href="login.html" class="nav-link">
+                    <span class="material-icons">person</span>
+                    <span>Iniciar Sesión</span>
+                </a>
+                <div class="nav-link" id="account-link">
+                    <span class="material-icons">account_circle</span>
+                    <span>Mi Cuenta</span>
+                    <div class="dropdown-menu">
+                        <a href="my-account.html">Mi Perfil</a>
+                        <a href="my-account.html#my-orders">Mis Pedidos</a>
+                        <a href="my-account.html#my-addresses">Mis Direcciones</a>
+                        <a href="my-account.html#payment-methods">Métodos de Pago</a>
+                        <a href="#">Cerrar Sesión</a>
+                    </div>
+                </div>
+                <a href="cart.html" class="nav-link">
+                    <span class="material-icons">shopping_cart</span>
+                    <span>Carrito</span>
+                </a>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="category-listing.html">Electrónica <span class="material-icons arrow-down">arrow_drop_down</span></a>
+                    <ul class="submenu">
+                        <li><a href="category-listing.html">Smartphones</a></li>
+                        <li><a href="category-listing.html">Portátiles</a></li>
+                        <li><a href="category-listing.html">Audífonos</a></li>
+                        <li><a href="category-listing.html">Televisores</a></li>
+                    </ul>
+                </li>
+                <li><a href="category-listing.html">Ropa</a></li>
+                <li><a href="category-listing.html">Hogar</a></li>
+                <li><a href="category-listing.html">Deportes</a></li>
+                <li><a href="category-listing.html">Ofertas</a></li>
+                <li><a href="sell.html">Vende con nosotros</a></li>
+                <li><a href="subscription-plans.html">Aumenta tu Alcance</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="hero-carousel">
+            <div class="carousel-inner" id="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://via.placeholder.com/1200x400?text=Banner+1" alt="Oferta Especial 1">
+                    <div class="carousel-caption">
+                        <h2>¡Grandes Ofertas de Verano!</h2>
+                        <p>Descubre descuentos increíbles en toda la tienda.</p>
+                        <a href="category-listing.html" class="btn-primary">Ver Ofertas</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://via.placeholder.com/1200x400?text=Banner+2" alt="Nueva Colección">
+                    <div class="carousel-caption">
+                        <h2>Nueva Colección de Tecnología</h2>
+                        <p>Los gadgets más innovadores te esperan.</p>
+                        <a href="category-listing.html" class="btn-primary">Explorar Ahora</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://via.placeholder.com/1200x400?text=Banner+3" alt="Envío Gratis">
+                    <div class="carousel-caption">
+                        <h2>Envío Gratis en todas tus compras</h2>
+                        <p>No te pierdas esta oportunidad única.</p>
+                        <a href="category-listing.html" class="btn-primary">Comprar Ya</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control prev" id="carousel-prev">&#10094;</button>
+            <button class="carousel-control next" id="carousel-next">&#10095;</button>
+            <div class="carousel-indicators" id="carousel-indicators"></div>
+        </section>
+
+        <section class="featured-categories">
+            <h2>Categorías Destacadas</h2>
+            <div class="categories-grid">
+                <a href="category-listing.html" class="category-card">
+                    <img src="https://via.placeholder.com/300x200?text=Electrónica" alt="Electrónica">
+                    <h3>Electrónica</h3>
+                </a>
+                <a href="category-listing.html" class="category-card">
+                    <img src="https://via.placeholder.com/300x200?text=Ropa" alt="Ropa">
+                    <h3>Ropa</h3>
+                </a>
+                <a href="category-listing.html" class="category-card">
+                    <img src="https://via.placeholder.com/300x200?text=Hogar" alt="Hogar">
+                    <h3>Hogar</h3>
+                </a>
+                <a href="category-listing.html" class="category-card">
+                    <img src="https://via.placeholder.com/300x200?text=Deportes" alt="Deportes">
+                    <h3>Deportes</h3>
+                </a>
+            </div>
+        </section>
+
+        <section class="featured-products">
+            <h2>Nuestros Favoritos</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/250x250?text=Producto+1" alt="Smartwatch Pro">
+                    <h3>Smartwatch Pro</h3>
+                    <p class="price">$350.000 COP</p>
+                    <div class="rating">
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star_half</span>
+                        <span>(150)</span>
+                    </div>
+                    <a href="product-detail.html" class="btn-primary">Ver Producto</a>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/250x250?text=Producto+2" alt="Camiseta Deportiva">
+                    <h3>Camiseta Deportiva</h3>
+                    <p class="price">$75.000 COP</p>
+                    <div class="rating">
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                        <span>(90)</span>
+                    </div>
+                    <a href="product-detail.html" class="btn-primary">Ver Producto</a>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/250x250?text=Producto+3" alt="Robot Aspirador">
+                    <h3>Robot Aspirador</h3>
+                    <p class="price">$1.200.000 COP</p>
+                    <div class="rating">
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star_border</span>
+                        <span>(65)</span>
+                    </div>
+                    <a href="product-detail.html" class="btn-primary">Ver Producto</a>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/250x250?text=Producto+4" alt="Zapatillas Running">
+                    <h3>Zapatillas Running</h3>
+                    <p class="price">$220.000 COP</p>
+                    <div class="rating">
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star_half</span>
+                        <span class="material-icons">star_border</span>
+                        <span>(210)</span>
+                    </div>
+                    <a href="product-detail.html" class="btn-primary">Ver Producto</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter-signup">
+            <h2>¡No te pierdas nuestras ofertas!</h2>
+            <p>Suscríbete a nuestro boletín para recibir las últimas noticias y promociones.</p>
+            <form action="#" method="POST">
+                <input type="email" placeholder="Ingresa tu correo electrónico" required>
+                <button type="submit" class="btn-primary">Suscribirse</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-columns">
+            <div class="footer-col">
+                <h3>Sobre Nosotros</h3>
+                <ul>
+                    <li><a href="#">Nuestra Historia</a></li>
+                    <li><a href="#">Trabaja con Nosotros</a></li>
+                    <li><a href="privacy-policy.html">Política de Privacidad</a></li>
+                    <li><a href="terms-conditions.html">Términos y Condiciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Atención al Cliente</h3>
+                <ul>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                    <li><a href="#">Envíos y Entregas</a></li>
+                    <li><a href="#">Devoluciones y Reembolsos</a></li>
+                    <li><a href="contact.html">Contáctanos</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Mi Cuenta</h3>
+                <ul>
+                    <li><a href="my-account.html">Mi Perfil</a></li>
+                    <li><a href="my-account.html#my-orders">Mis Pedidos</a></li>
+                    <li><a href="cart.html">Mi Carrito</a></li>
+                    <li><a href="login.html">Iniciar Sesión</a></li>
+                    <li><a href="subscription-plans.html">Planes de Visibilidad</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Síguenos</h3>
+                <div class="social-media">
+                    <a href="#"><img src="https://via.placeholder.com/30x30/3b5998/ffffff?text=F" alt="Facebook"></a>
+                    <a href="#"><img src="https://via.placeholder.com/30x30/E1306C/ffffff?text=I" alt="Instagram"></a>
+                    <a href="#"><img src="https://via.placeholder.com/30x30/1DA1F2/ffffff?text=T" alt="Twitter"></a>
+                    <a href="#"><img src="https://via.placeholder.com/30x30/FF0000/ffffff?text=Y" alt="YouTube"></a>
+                </div>
+                <h3>Métodos de Pago</h3>
+                <div class="payment-methods">
+                    <img src="https://via.placeholder.com/60x30?text=Visa" alt="Visa">
+                    <img src="https://via.placeholder.com/60x30?text=Mastercard" alt="Mastercard">
+                    <img src="https://via.placeholder.com/60x30?text=PSE" alt="PSE">
+                    <img src="https://via.placeholder.com/60x30?text=Nequi" alt="Nequi">
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Tu Tienda Online. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <div class="chatbot-container" id="chatbot-container">
+        <div class="chatbot-header" id="chatbot-header">
+            <h3>Asistente Virtual</h3>
+            <button class="close-chatbot" id="close-chatbot"><span class="material-icons">close</span></button>
+        </div>
+        <div class="chatbot-body" id="chatbot-body">
+            <div class="message bot-message">Hola, soy tu asistente virtual. ¿En qué puedo ayudarte hoy?</div>
+        </div>
+        <div class="chatbot-footer">
+            <input type="text" id="chatbot-input" placeholder="Escribe tu mensaje...">
+            <button id="chatbot-send-btn"><span class="material-icons">send</span></button>
+        </div>
+    </div>
+
+    <button class="open-chatbot-btn" id="open-chatbot-btn">
+        <span class="material-icons">chat</span>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

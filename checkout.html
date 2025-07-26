@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Tu Tienda Online</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-top-bar">
+            <span>¡Envío GRATIS en compras superiores a $150.000 COP!</span>
+        </div>
+        <div class="header-main">
+            <div class="logo">
+                <a href="index.html">Tu Tienda Online</a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar productos...">
+                <button><span class="material-icons">search</span></button>
+            </div>
+            <div class="user-actions">
+                <a href="login.html" class="nav-link">
+                    <span class="material-icons">person</span>
+                    <span>Iniciar Sesión</span>
+                </a>
+                <div class="nav-link" id="account-link">
+                    <span class="material-icons">account_circle</span>
+                    <span>Mi Cuenta</span>
+                    <div class="dropdown-menu">
+                        <a href="my-account.html">Mi Perfil</a>
+                        <a href="my-account.html#my-orders">Mis Pedidos</a>
+                        <a href="my-account.html#my-addresses">Mis Direcciones</a>
+                        <a href="my-account.html#payment-methods">Métodos de Pago</a>
+                        <a href="#">Cerrar Sesión</a>
+                    </div>
+                </div>
+                <a href="cart.html" class="nav-link">
+                    <span class="material-icons">shopping_cart</span>
+                    <span>Carrito</span>
+                </a>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="category-listing.html">Electrónica <span class="material-icons arrow-down">arrow_drop_down</span></a>
+                    <ul class="submenu">
+                        <li><a href="category-listing.html">Smartphones</a></li>
+                        <li><a href="category-listing.html">Portátiles</a></li>
+                        <li><a href="category-listing.html">Audífonos</a></li>
+                        <li><a href="category-listing.html">Televisores</a></li>
+                    </ul>
+                </li>
+                <li><a href="category-listing.html">Ropa</a></li>
+                <li><a href="category-listing.html">Hogar</a></li>
+                <li><a href="category-listing.html">Deportes</a></li>
+                <li><a href="category-listing.html">Ofertas</a></li>
+                <li><a href="sell.html">Vende con nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content checkout-page">
+        <h1>Finalizar Compra</h1>
+
+        <div class="checkout-container">
+            <div class="checkout-form-section">
+                <form class="checkout-form">
+                    <h2>1. Información de Envío</h2>
+                    <div class="form-group">
+                        <label for="full-name">Nombre Completo</label>
+                        <input type="text" id="full-name" name="full-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Dirección</label>
+                        <input type="text" id="address" name="address" placeholder="Calle, Número, Apto/Oficina" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="city">Ciudad</label>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="department">Departamento</label>
+                        <input type="text" id="department" name="department" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="zip-code">Código Postal</label>
+                        <input type="text" id="zip-code" name="zip-code">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Teléfono</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <h2>2. Método de Pago</h2>
+                    <div class="payment-methods">
+                        <label class="payment-option">
+                            <input type="radio" name="payment-method" value="credit-card" checked>
+                            Tarjeta de Crédito/Débito
+                            <div class="card-details">
+                                <div class="form-group">
+                                    <label for="card-number">Número de Tarjeta</label>
+                                    <input type="text" id="card-number" placeholder="XXXX XXXX XXXX XXXX">
+                                </div>
+                                <div class="form-group">
+                                    <label for="card-name">Nombre en la Tarjeta</label>
+                                    <input type="text" id="card-name">
+                                </div>
+                                <div class="form-group-inline">
+                                    <div class="form-group">
+                                        <label for="expiry-date">Fecha Exp.</label>
+                                        <input type="text" id="expiry-date" placeholder="MM/AA">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cvv">CVV</label>
+                                        <input type="text" id="cvv" placeholder="XXX">
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+                        <label class="payment-option">
+                            <input type="radio" name="payment-method" value="pse">
+                            PSE (Pagos Seguros en Línea)
+                        </label>
+                        <label class="payment-option">
+                            <input type="radio" name="payment-method" value="nequi">
+                            Nequi
+                        </label>
+                    </div>
+
+                    <h2>3. Resumen del Pedido</h2>
+                    <div class="order-summary-items">
+                        <div class="summary-item-product">
+                            <img src="https://via.placeholder.com/60x60?text=Prod1" alt="Producto 1">
+                            <span>Smartphone S23</span>
+                            <span>x1</span>
+                            <span>$2.500.000 COP</span>
+                        </div>
+                        <div class="summary-item-product">
+                            <img src="https://via.placeholder.com/60x60?text=Prod2" alt="Producto 2">
+                            <span>Auriculares Inalámbricos</span>
+                            <span>x2</span>
+                            <span>$700.000 COP</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="order-summary">
+                <h3>Resumen de Pago</h3>
+                <div class="summary-item">
+                    <span>Subtotal:</span>
+                    <span id="checkout-subtotal">$0.00 COP</span>
+                </div>
+                <div class="summary-item">
+                    <span>Envío:</span>
+                    <span id="checkout-shipping">$0.00 COP</span>
+                </div>
+                <div class="summary-item total">
+                    <span>Total del Pedido:</span>
+                    <span id="checkout-total">$0.00 COP</span>
+                </div>
+
+                <div class="summary-separator"></div>
+
+                <div class="summary-item payment-breakdown">
+                    <span>Tu Comisión (20% del total):</span>
+                    <span id="checkout-20-percent">$0.00 COP</span>
+                </div>
+                <div class="summary-item payment-breakdown">
+                    <span>Valor del Producto (80% del total):</span>
+                    <span id="checkout-80-percent">$0.00 COP</span>
+                </div>
+
+                <div class="apply-credit-section">
+                    <div class="credit-balance">
+                        Crédito Disponible: <strong id="available-credit">$10.000 COP</strong>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="apply-credit-checkbox">
+                        <label for="apply-credit-checkbox">Aplicar Crédito</label>
+                    </div>
+                    <div class="summary-item credit-applied-row" style="display: none;">
+                        <span>Crédito Aplicado:</span>
+                        <span id="credit-applied">-$0.00 COP</span>
+                    </div>
+                </div>
+
+                <div class="summary-separator"></div>
+
+                <div class="summary-item final-amount">
+                    <span>Monto a Pagar Ahora:</span>
+                    <span id="final-amount-to-pay">$0.00 COP</span>
+                </div>
+
+                <button type="submit" class="btn-primary btn-place-order">Confirmar Pedido</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-columns">
+            <div class="footer-col">
+                <h3>Sobre Nosotros</h3>
+                <ul>
+                    <li><a href="#">Nuestra Historia</a></li>
+                    <li><a href="#">Trabaja con Nosotros</a></li>
+                    <li><a href="privacy-policy.html">Política de Privacidad</a></li>
+                    <li><a href="terms-conditions.html">Términos y Condiciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Atención al Cliente</h3>
+                <ul>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                    <li><a href="#">Envíos y Entregas</a></li>
+                    <li><a href="#">Devoluciones y Reembolsos</a></li>
+                    <li><a href="contact.html">Contáctanos</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Mi Cuenta</h3>
+                <ul>
+                    <li><a href="my-account.html">Mi Perfil</a></li>
+                    <li><a href="my-account.html#my-orders">Mis Pedidos</a></li>
+                    <li><a href="cart.html">Mi Carrito</a></li>
+                    <li><a href="login.html">Iniciar Sesión</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Síguenos</h3>
+                <div class="social-media">
+                    <a href="#"><img src="https://via.placeholder.com/30x30/3b5998/ffffff?text=F" alt="Facebook"></a>
+                    <a href="#"><img src="https://via.placeholder.com/30x30/E1306C/ffffff?text=I" alt="Instagram"></a>
+                    <a href="#"><img src="https://via.placeholder.com/30x30/1DA1F2/ffffff?text=T" alt="Twitter"></a>
+                    <a href="#"><img src="https://via.placeholder.com/30x30/FF0000/ffffff?text=Y" alt="YouTube"></a>
+                </div>
+                <h3>Métodos de Pago</h3>
+                <div class="payment-methods">
+                    <img src="https://via.placeholder.com/60x30?text=Visa" alt="Visa">
+                    <img src="https://via.placeholder.com/60x30?text=Mastercard" alt="Mastercard">
+                    <img src="https://via.placeholder.com/60x30?text=PSE" alt="PSE">
+                    <img src="https://via.placeholder.com/60x30?text=Nequi" alt="Nequi">
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Tu Tienda Online. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <div class="chatbot-container" id="chatbot-container">
+        <div class="chatbot-header" id="chatbot-header">
+            <h3>Asistente Virtual</h3>
+            <button class="close-chatbot" id="close-chatbot"><span class="material-icons">close</span></button>
+        </div>
+        <div class="chatbot-body" id="chatbot-body">
+            <div class="message bot-message">Hola, soy tu asistente virtual. ¿En qué puedo ayudarte hoy?</div>
+        </div>
+        <div class="chatbot-footer">
+            <input type="text" id="chatbot-input" placeholder="Escribe tu mensaje...">
+            <button id="chatbot-send-btn"><span class="material-icons">send</span></button>
+        </div>
+    </div>
+
+    <button class="open-chatbot-btn" id="open-chatbot-btn">
+        <span class="material-icons">chat</span>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
